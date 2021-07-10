@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    }
+    
+    body{
+        background: rgb(220, 241, 241);
+        font-family: Arial;
+        
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height:inherit;
+        width: 100%;
+        
+    }
+    .container {
+        width: 97%;
+        margin:20px auto;
+        overflow: hidden;
+        background-color: rgb(191, 210, 171);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align:flex-end;
+        
+    }
+    .secbox-1{
+        width: 80%;
+        margin: 15px;
+        padding: 60px;
+        background-color: rgb(48, 120, 120);
+        color: white;
+    }
+    .secbox-2{
+        width: 80%;
+        margin: 15px;
+        padding: 60px;
+        background: #72b9c1;
+        color: white;
+    
+    }
+    .art-box{
+        margin: 15px;
+        display: flex;
+        width: 80%;
+        flex-direction: raw;
+        flex-wrap: nowrap;
+    
+    }
+    .art-1{
+        margin: 8px;
+        background-color: rgb(120, 129, 129);
+        flex: 70%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+    .art-2{
+        background: rgb(98, 90, 79);
+        float: right;
+        flex: 30%;
+        background-color: white;
+        padding: 20px;
+        margin: 8px;
+        
+    }
+    .footbox{
+        margin: 15px;
+        padding: 20px;
+        background: #ddd
+    }
+    
+    @media only screen and (min-device-width: 360px) {
+        .container{width: 100%;}
+        .secbox-1{width: 100%;}
+        .secbox-2{width: 100%;}
+        .art-box{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+    
+        }
+        .footbox{width: 100%;}
+    }
+    
+    @media only screen and (max-device-width: 415px){
+        .container{width: 100%; }
+        .secbox-1{width: 100%;}
+        .secbox-2{width: 100%;}
+        .footbox{width: 100%;}
+        .art-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;    
+            align-content: space-around;
+        }
+       
+        .art-2{
+            
+            
+        }
+    }
